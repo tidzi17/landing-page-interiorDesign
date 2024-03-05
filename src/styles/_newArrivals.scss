@@ -1,0 +1,108 @@
+.new-arrivals-container{
+    width: 100%;
+    margin: 50px 0;
+    overflow: hidden;
+    &_content{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 170px;
+        &_text{
+            width: 405px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transform: translateY(30%);
+            &_item{
+                display: flex;
+            }
+            h2{
+                font-size: 60px;
+                font-weight: 400;
+                font-family: 'Abhaya Libre'; 
+                margin-bottom: 48px;
+            }
+            span{
+               font-size: 16px;
+               font-family: 'Poppins';
+               font-weight: 400;
+               margin-left: 12px;
+            }
+            p{
+                color: $primaryGrey;
+                font-size: 16px;
+                font-weight: 400;
+                font-family: 'Poppins';
+                line-height: 28px;
+                margin-bottom: 37px;
+            }
+            button{
+                font-size: 16px;
+                font-weight: 500;
+                font-family: 'Poppins';
+                outline: none;
+                border: none;
+                border-bottom: 1px solid black;
+                background-color: transparent;
+                width: fit-content;
+            }
+        }
+        &_slider-container{
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            width: 70%;
+            &_slides{
+                display: flex;
+                gap: 23px;
+               
+                &_item{
+                    width: 390px;
+                    &_img{
+                        height: 420px;
+                        width: 390px;
+                        img{
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    &_details{
+                        width: 100%;
+                        margin-top: 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        .title{
+                            font-size: 18px;
+                            font-family: 'Poppins';
+                            font-weight: 500;
+                        }
+                        .price{
+                            font-size: 16px;
+                            font-family: 'Poppins';
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+            &_controls{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                gap: 25px;
+                margin-top: 40px;
+               
+                .line{
+                    height: 1px;
+                    background-color: $primaryGrey;
+                    width: 70%;
+                }
+                span{
+                    font-size: 1.7rem;
+                }
+            }
+        }
+    }
+}

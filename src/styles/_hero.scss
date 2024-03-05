@@ -1,0 +1,87 @@
+.hero-container{
+    width: 100%;
+    &__content{
+        height: 700px;
+        padding: 100px ;
+        display: flex;
+        align-items: center;
+        
+        &_main{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            &_side{
+                p{
+                    font-size: 20px;
+                    font-family: 'Poppins';
+                    font-weight: 500;
+                    color: $primaryGrey;
+                width: fit-content;
+                height: fit-content;
+                transform: rotate(-90deg);
+                position: absolute;
+                top: 77%;
+                left: -4%;
+                
+                
+                span{
+                    font-weight: 600;
+                    color: $black;
+                }
+                }
+            }
+            &_content{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                z-index: 10;
+                position: relative;
+                
+                width: fit-content;
+                margin-right: -15px;
+                
+                
+                &_text{
+                    margin-left: 12px;
+                    padding-top: 90px;
+                  span{
+                    position: absolute;
+                    right: 20%;
+                  }
+                    h1{
+                        font-size: 74px;
+                        font-family: 'Abhaya Libre'; 
+                        font-weight: 400;
+                      
+                    }
+                    h5{
+                        text-transform: uppercase;
+                        color: $primaryGrey;
+                        font-family: 'Poppins';
+                        font-weight: 500;
+                        letter-spacing: 5px;
+                    }
+
+                }
+                &_scroll{
+                    img{
+                        width: 13px;
+                        height: 53px;
+                        margin-left: 50px;
+                    }
+                }
+            }
+            
+        }
+        &_image{
+            width: 50%;
+            height: 100%;
+            background-image: url(../assets/hero.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+}

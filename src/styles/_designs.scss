@@ -1,0 +1,76 @@
+.designs-container{
+    padding: 100px;
+    &_content{
+        width: 100%;
+        &_text{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+           &_item{
+            display: flex;
+            position: relative;
+            h2{
+                font-size: 60px;
+                font-weight: 400;
+                font-family: 'Abhaya Libre'; 
+            }
+            span{
+               font-size: 16px;
+               font-family: 'Poppins';
+               font-weight: 400;
+               margin-left: 12px;
+            }
+            p{
+                color: $primaryGrey;
+                font-size: 16px;
+                font-weight: 400;
+                font-family: 'Poppins';
+                line-height: 28px;
+            }
+            }
+          
+        }
+
+        &_grid{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 35px;
+            margin-top: 75px;
+            &_grid-item{
+                height: 600px;
+            }
+            #grid-item-first{
+                grid-column: 1 / span 1;
+                background-image: url(../assets/designgrid.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            
+            }
+            #grid-item-second{
+                grid-column: 2 / span 2;
+                background-image: url(../assets/designgrid1.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            #grid-item-third{
+                grid-column: 1 / span 2;
+                background-image: url(../assets/designgrid2.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            
+            }
+            #grid-item-forth{
+                grid-column: 3 / span 1;
+                background-image: url(../assets/designgrid3.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+}

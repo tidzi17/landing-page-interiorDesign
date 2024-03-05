@@ -1,0 +1,48 @@
+.navbar-container{
+    width: 100%;
+    height: auto;
+    position: relative;
+    &__content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px 100px;
+        position: relative;
+        &_icons{
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+            span{
+                font-size: 1.5rem;
+                opacity: 87%;
+                &:first-child{
+                    font-size: 1.9rem;
+                }
+            }
+        }
+        &_logo{
+            position: absolute; 
+            left: 50%; 
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            
+           p{
+            margin: 0; 
+            font-size: 2rem; 
+            font-family: 'Abhaya Libre'; 
+            font-weight: 400;
+            text-transform: uppercase;
+           }
+            
+        }
+        &_menu{
+            font-size: 40px;
+            cursor: pointer;
+            opacity: 87%;
+        }
+    }
+}
