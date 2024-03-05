@@ -7,8 +7,11 @@ import Projects from './components/Projects';
 function App() {
   return (
    <div className="App">
+
     <div className="banner-container">
-    <div className="banner"><p>Make room for better living</p></div>
+    <div className="banner"><p>Make room for better living</p>
+    </div>
+
     </div>
    
     <Navbar />
