@@ -27,6 +27,8 @@
                 font-weight: 400;
                 font-family: 'Poppins';
                 line-height: 28px;
+                text-align: right;
+                
             }
             }
           
@@ -73,4 +75,82 @@
             }
         }
     }
+}
+
+
+
+@media only screen and (max-width: 1024px)  {
+    .designs-container{
+        padding: 50px;
+        &_content{
+            &_text{
+                width: fit-content;
+                flex-direction: column;
+                align-items: flex-start;
+                
+               &_item{
+                
+                h2{
+                    font-size: 40px;
+                }
+                span{
+                   font-size: 13px;
+                }
+                p{
+                    font-size: 12px;
+                    line-height: 20px;
+                    text-align: left;
+                    br{
+                        display: none;
+                    }
+                    
+                }
+                }
+              
+            }
+    
+            &_grid{
+                gap: 15px;
+                margin-top: 35px;
+                &_grid-item{
+                    height: 400px;
+                }
+            }
+        }
+    }
+    
+  
+}
+
+@media only screen and (max-width: 600px)  {
+    .designs-container{
+        padding: 10px;
+        &_content{
+            &_text{
+               &_item{
+                h2{
+                    font-size: 30px;
+                }
+                span{
+                   font-size: 11px;
+                }
+                p{
+                    font-size: 12px;
+                    line-height: 20px;
+                   
+                }
+                }
+              
+            }
+    
+            &_grid{
+                gap: 5px;
+                margin-top: 35px;
+                &_grid-item{
+                    height: 300px;
+                }
+            }
+        }
+    }
+  
 }

@@ -19,3 +19,13 @@
         font-weight: 400;
     }
   }
+
+  @media only screen and (max-width: 1024px){
+    .button{
+        width: 100px;
+        height: 35px;
+        button{
+            font-size: 12px;
+        }
+      }
+  }

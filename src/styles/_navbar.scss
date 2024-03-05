@@ -46,3 +46,63 @@
         }
     }
 }
+
+@media only screen and (max-width: 1024px)  {
+    .navbar-container{
+        &__content{
+            padding: 15px 50px;
+            &_icons{
+                gap: 15px;
+                span{
+                    font-size: 1.2rem;
+                    &:first-child{
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+            &_logo{
+                position: absolute; 
+                left: 50%; 
+                transform: translateX(-50%);
+                display: flex;
+                align-items: center;
+                
+               p{
+                font-size: 1.8rem; 
+               }
+                
+            }
+            &_menu{
+                font-size: 25px;
+            }
+        }
+    }
+   
+}
+
+@media only screen and (max-width: 600px)  {
+    .navbar-container{
+        &__content{
+            padding: 5px 10px;
+            &_icons{
+                gap: 3px;
+                span{
+                    font-size: 0.9rem;
+                    &:first-child{
+                        font-size: 1rem;
+                    }
+                }
+            }
+            &_logo{
+                
+               p{
+                font-size: 1.2rem; 
+               }
+                
+            }
+            &_menu{
+                font-size: 25px;
+            }
+        }
+    }
+}
